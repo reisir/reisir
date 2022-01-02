@@ -21,8 +21,9 @@ iframe {
 
 ```php
 <?php
+ignore_user_abort(true);
 
-/// Remember to set GITHUB_WEBHOOK_SECRET in /etc/environment
+// Remember to set GITHUB_WEBHOOK_SECRET in /etc/environment
 
 $cmd = 'git pull';
 $sig_check = 'sha256=' . hash_hmac('sha256', Request::getContent(), $_ENV['GITHUB_WEBHOOK_SECRET']);
