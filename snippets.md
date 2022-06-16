@@ -16,3 +16,22 @@ iframe {
   ) !important;
 }
 ```
+
+### PHP validate GitHub webhook w/ secret
+
+```php
+<?php
+ignore_user_abort(true);
+
+// Remember to set GITHUB_WEBHOOK_SECRET in /etc/environment
+
+$cmd = 'git pull';
+$sig_check = 'sha256=' . hash_hmac('sha256', Request::getContent(), $_ENV['GITHUB_WEBHOOK_SECRET']);
+
+if (hash_equals($sig_check, Request::header('X-Hub-Signature-256'))) { 
+	passthru($cmd);
+} else {
+	http_response_code(403);
+	die("Forbidden\n");
+}
+```
