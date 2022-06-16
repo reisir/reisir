@@ -1,4 +1,4 @@
-![Monogatari Watch order chart](./img/monogatariWatchOrder.png)
+https://www.reddit.com/r/PleX/comments/h87b1p/monogatari_metadata_done_right/
 
 ## Anime Seasons
 
@@ -27,6 +27,8 @@ Monogatari Series [41:48:21]
 ## Animated Sidestories
 
 - [x] Koyomi History
+
+![Monogatari Watch order chart](./img/monogatariWatchOrder.png)
 
 ![Stan SB - Anyone Out There EP cover art](./img/anyoneoutthereep.jpg)
 
@@ -72,8 +74,6 @@ Monogatari Series [41:48:21]
   - Monogatari Anime
 - NISIOISIN
   - Monogatari LN's
-- TechStudio
-  - Thank you for seeding StanSB - Anyone Out There EP
 
 ## Misc
 
